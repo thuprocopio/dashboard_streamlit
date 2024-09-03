@@ -19,7 +19,7 @@ st.write(data)
 df = data.copy()
 
 # Interface do usuário
-st.title('DEC Global (12M)')
+st.title('DEC Global Total (12M)')
 
 # Cria duas colunas
 col1, col2 = st.columns(2)
@@ -73,10 +73,10 @@ fig.add_trace(go.Scatter(
 
 # Atualizando o layout do gráfico
 fig.update_layout(
-    title='Indicadores globais DEC (12M)',
+    title='Indicadores globais DEC TOTAL(12M)',
     barmode='stack',
     xaxis_title='Competência',
-    yaxis_title='Valores',
+    yaxis_title='DEC[horas]',
     legend_title='Legend',
     font=dict(color='white'),
     title_font=dict(size=12),
